@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/chriscainx/mnnpy.svg?branch=master)](https://travis-ci.org/chriscainx/mnnpy) [![Downloads](http://pepy.tech/badge/mnnpy)](http://pepy.tech/count/mnnpy)
 # mnnpy - MNN-correct in python!
 
+I fix the numba error in this version.
+
 An implementation of MNN correct in python featuring low memory usage, full multicore support and compatibility with the [scanpy](https://github.com/theislab/scanpy) framework.
 
 Batch effect correction by matching mutual nearest neighbors [(Haghverdi et al, 2018)](https://www.nature.com/articles/nbt.4091) has been implemented as a function 'mnnCorrect' in the R package [scran](https://bioconductor.org/packages/release/bioc/html/scran.html). Sadly it's extremely slow for big datasets and doesn't make full use of the parallel architecture of modern CPUs.
@@ -44,7 +46,7 @@ Mnnpy is available on PyPI. You can install with `pip install mnnpy`.
 
 If you want the developing version, do:
 ```
-git clone https://github.com/chriscainx/mnnpy.git
+git clone https://github.com/ChineseBest/mnnpy.git
 cd mnnpy
 pip install .
 ```
